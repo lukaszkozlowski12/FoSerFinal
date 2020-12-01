@@ -1,0 +1,55 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/messages_header">
+
+        <EditTextPreference
+            app:defaultValue="@string/LicznikWynosi"
+            app:icon="@drawable/circle"
+            app:key="message"
+            app:title="@string/signature_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <CheckBoxPreference
+            app:key="show_time"
+            app:summary="Yes/No"
+            app:title="@string/reply_title"
+            app:defaultValue="true"/>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:icon="@android:drawable/ic_delete"
+            android:key="liczodNowa"
+            android:summaryOff="Licznik jest zerowany"
+            android:summaryOn="Licznik nie jest zerowany"
+            android:title="@string/NieLicz" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/sync_header">
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="@string/sync_title"
+            app:defaultValue="true"/>
+
+        <ListPreference
+            android:defaultValue="@string/defaultListvalue"
+            android:dependency="sync"
+            android:entries="@array/pref_example_list_titles"
+
+            android:entryValues="@array/pref_example_list_values"
+            android:icon="@android:drawable/btn_star_big_on"
+            android:key="list_preference"
+            android:title="Select counter time"
+
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            android:layout_marginTop="5dp"
+            app:dependency="sync"
+            app:key="double"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/attachment_title" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

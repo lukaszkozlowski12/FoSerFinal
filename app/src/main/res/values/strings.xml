@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">FoSer</string>
+    <!-- Settings Activity Title -->
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header"> Notification information</string>
+    <string name="sync_header">Synchronization</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Message to show</string>
+    <string name="reply_title">Display when</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Work periodicly</string>
+    <string name="attachment_title">Double speed</string>
+    <string name="attachment_summary_on">Double working frequency </string>
+    <string name="attachment_summary_off">Standard operating frequency</string>
+  <string name="LicznikWynosi">Licznik wynosi:</string>
+    <!-- Main activity -->
+    <string name="info_state"> Service state: </string>
+    <string name="info_service_running">Service IS running...</string>
+    <string name="info_service_not_running">Service is NOT running...</string>
+    <string name="info_states"> Service action: </string>
+    <string name="buton_start">Start</string>
+    <string name="buton_restart">Restart</string>
+    <string name="buton_stop">Stop</string>
+<string name="ServiceSettings">Service settings:</string>
+    <string name="Settings">Settings...</string>
+
+
+
+    <!-- Foreground service -->
+    <string name="ser_title">FoSer!</string>
+    <string name="ser_initial_info"> Service is just running...</string>
+
+    <!-- Settings Activity Title -->
+    <string name="label_settings">Settings</string>
+
+    <!-- Main menu -->
+    <string name="titleSettings">Settings</string>
+    <string name="titleExit">Exit</string>
+
+    <!-- LIST PREFERENCE -->
+<string name="NieLicz">Nie odliczaj od nowa!</string>
+
+
+    <string-array name="pref_example_list_titles">
+        <item>2s</item>
+        <item>5s</item>
+        <item>10s</item>
+    </string-array>
+    <string name="defaultListvalue">2</string>
+
+    <string-array name="pref_example_list_values">
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+
+
+</resources>
